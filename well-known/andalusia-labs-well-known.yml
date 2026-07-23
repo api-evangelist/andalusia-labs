@@ -1,0 +1,16 @@
+generated: '2026-07-17'
+method: probed
+source: live probes of /.well-known/ on apis.yml + product hosts
+note: No genuine .well-known discovery documents were served. andalusia-labs.com
+  returns 404 for security.txt; opengdp.network returns HTTP 200 for probed paths
+  but serves the SPA marketing shell (soft-404), not a real discovery document.
+hosts:
+- host: https://andalusia-labs.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+- host: https://opengdp.network
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: SPA shell, not a valid security.txt (soft-404)

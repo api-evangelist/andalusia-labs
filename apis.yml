@@ -1,8 +1,26 @@
 aid: andalusia-labs
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/andalusia-labs.png
 name: Andalusia Labs
-description: 'Andalusia Labs is a company surfaced as a portfolio company of pantera-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Andalusia Labs is an applied research laboratory headquartered in Palo Alto building
+  internet-native economic infrastructure. Its flagship platform, OpenGDP, is the "Global Base Layer
+  for Programmable GDP" — an EVM-compatible execution layer and network stack for moving value
+  (stablecoin settlement), programming assets (tokenized securities, deposits, and commodities), and
+  orchestrating real-world economic workflows across enterprises, financial institutions, and
+  governments with institutional-grade privacy, compliance, and audit controls. OpenGDP ships
+  developer documentation (build applications, build networks, run validators), a live demo, and a
+  smart-contract bug-bounty program. Backed by Pantera Capital, Founders Fund, Naval Ravikant,
+  Anthony Pompliano, and the co-founders of Alchemy.'
 url: https://raw.githubusercontent.com/api-evangelist/andalusia-labs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -16,6 +34,13 @@ modified: '2026-07-17'
 tags:
 - Company
 - Crypto
+- Blockchain
+- Stablecoins
+- Tokenization
+- Payments
+- DeFi
+- Infrastructure
+- EVM
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +50,39 @@ maintainers:
 common:
 - type: Website
   url: https://andalusia-labs.com/
+- type: Website
+  name: OpenGDP
+  url: https://opengdp.network/
+- type: DeveloperPortal
+  url: https://docs.opengdp.network/
+- type: Documentation
+  url: https://docs.opengdp.network/
+- type: GettingStarted
+  url: https://docs.opengdp.network/get-started/introduction/start-here.md
+- type: Sandbox
+  name: OpenGDP Demo
+  url: https://demo.opengdp.network/
+- type: Support
+  name: Discord
+  url: https://discord.gg/opengdp
+- type: Support
+  name: Telegram
+  url: https://t.me/OpenGDP_Network
+- type: TermsOfService
+  url: https://andalusia-labs.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://andalusia-labs.com/privacy-policy
+- type: Security
+  name: OpenGDP Bug Bounty
+  url: https://docs.opengdp.network/get-started/security/bug-bounty.md
+- type: VulnerabilityDisclosure
+  url: security/andalusia-labs-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/andalusia-labs-domain-security.yml
+- type: LLMsTxt
+  url: llms/andalusia-labs-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
